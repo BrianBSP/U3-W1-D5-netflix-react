@@ -28,11 +28,11 @@ class GalleriaFilms extends Component {
     return (
       <Container fluid>
         <Row>
-          {/* {this.films.map((movie) => (
+          {this.state.films.map((movie) => (
             <Col md={6} lg={4} xl={2}>
               <Card.Img src={movie.Poster} alt={movie.Title} className="movie-img" />
             </Col>
-          ))} */}
+          ))}
         </Row>
       </Container>
     );
