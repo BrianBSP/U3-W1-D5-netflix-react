@@ -5,6 +5,7 @@ import { NavDropdown } from "react-bootstrap";
 import netflixLogo from "./imgs/netflix_logo.png";
 import avatarImg from "./imgs/avatar.png";
 import kidsIcon from "./imgs/kids_icon.png";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const MyNav = () => {
   return (
@@ -33,6 +34,7 @@ const MyNav = () => {
               <i className="bi bi-bell-fill text-white"></i>
             </Nav.Link>
             <NavDropdown
+              bg="dark"
               title={<img src={avatarImg} alt="user photo" width="35" height="35" />}
               id="navbarScrollingDropdown"
             >
