@@ -1,5 +1,7 @@
 import { Component } from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+//import { Card, Col, Container, Row } from "react-bootstrap";
+import MoviesRow from "./MoviesRow";
+import { Container } from "react-bootstrap";
 
 class GalleriaFilms extends Component {
   state = {
@@ -26,14 +28,10 @@ class GalleriaFilms extends Component {
 
   render() {
     return (
-      <Container fluid>
-        <Row>
-          {this.state.films.map((movie) => (
-            <Col md={6} lg={4} xl={2}>
-              <Card.Img src={movie.Poster} alt={movie.Title} className="movie-img" />
-            </Col>
-          ))}
-        </Row>
+      <Container fluid className="px-0">
+        <MoviesRow title="Trending Now" cerca="avengers" />
+        <MoviesRow title="Watch It Again" cerca="dragonball" />
+        <MoviesRow title="New Releases" cerca="pirates of the caribbean" />
       </Container>
     );
   }

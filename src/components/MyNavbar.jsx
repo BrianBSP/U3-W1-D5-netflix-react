@@ -35,7 +35,7 @@ const MyNav = () => {
             </Nav.Link>
             <NavDropdown
               bg="dark"
-              title={<img src={avatarImg} alt="user photo" width="35" height="35" />}
+              title={<img src={avatarImg} alt="userphoto" width="35" height="35" />}
               id="navbarScrollingDropdown"
             >
               <NavDropdown.Item href="./profile-netflix.html">Account</NavDropdown.Item>
