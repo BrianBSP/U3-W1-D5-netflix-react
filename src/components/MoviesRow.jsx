@@ -25,10 +25,10 @@ class MoviesRow extends Component {
   }
   render() {
     return (
-      <Container fluid className="bg-dark">
+      <Container fluid className="bg-dark pt-3">
         <h3 className="text-white text-start">{this.props.title}</h3>
         <Row>
-          {this.state.films.map((movie) => (
+          {this.state.films.slice(0, 6).map((movie) => (
             <Col md={6} lg={4} xl={2}>
               <Card.Img src={movie.Poster} alt={movie.Title} className="movie-img" />
             </Col>
